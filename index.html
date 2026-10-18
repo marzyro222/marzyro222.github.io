@@ -228,64 +228,69 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Réserve ta <span class="gradient-text">session</span></h2>
-            <p class="section-subtitle">Remplis le formulaire, on te recontacte sous 24h</p>
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">Réserve ta <span class="gradient-text">session</span></h2>
+        <p class="section-subtitle">Remplis le formulaire, on te recontacte sous 24h</p>
 
-            <form class="contact-form" 
-                  id="contactForm" 
-                  action="https://formspree.io/f/xeaevagg" 
-                  method="POST">
+        <form class="contact-form" 
+              id="contactForm" 
+              action="https://formspree.io/f/TON_ID_FORMSPREE" 
+              method="POST">
 
-                <input type="hidden" name="_next" value="merci.html">
+            <input type="hidden" name="_next" value="merci.html">
 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Pseudo / Nom</label>
-                        <input type="text" id="name" name="name" required placeholder="Ton pseudo Fortnite">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required placeholder="ton@email.com">
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="rank">Ton rang actuel</label>
-                        <select id="rank" name="rank" required>
-                            <option value="">Sélectionne ton rang</option>
-                            <option>Bronze</option>
-                            <option>Argent</option>
-                            <option>Or</option>
-                            <option>Platine</option>
-                            <option>Diamant</option>
-                            <option>Elite</option>
-                            <option>Champion</option>
-                            <option>Unreal</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="formule">Formule souhaitée</label>
-                        <select id="formule" name="formule" required>
-                            <option value="">Choisis une formule</option>
-                            <option>Découverte - 19€</option>
-                            <option>Progression - 89€</option>
-                            <option>Elite - 199€</option>
-                        </select>
-                    </div>
-                </div>
-
+            <div class="form-row">
                 <div class="form-group">
-                    <label for="message">Tes objectifs</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Décris tes objectifs et ce que tu veux améliorer..."></textarea>
+                    <label for="name">Pseudo / Nom</label>
+                    <input type="text" id="name" name="name" required placeholder="Ton pseudo Fortnite">
                 </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="ton@email.com">
+                </div>
+            </div>
 
-                <button type="submit" class="btn btn-primary btn-large">Envoyer ma demande</button>
-            </form>
-        </div>
-    </section>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="rank">Ton rang actuel</label>
+                    <select id="rank" name="rank" required>
+                        <option value="">Sélectionne ton rang</option>
+                        <option>Bronze</option>
+                        <option>Argent</option>
+                        <option>Or</option>
+                        <option>Platine</option>
+                        <option>Diamant</option>
+                        <option>Elite</option>
+                        <option>Champion</option>
+                        <option>Unreal</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="formule">Formule souhaitée</label>
+                    <select id="formule" name="formule" required>
+                        <option value="">Choisis une formule</option>
+                        <option>Découverte - 19€</option>
+                        <option>Progression - 89€</option>
+                        <option>Elite - 199€</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Tes objectifs</label>
+                <textarea id="message" name="message" rows="5" placeholder="Décris tes objectifs et ce que tu veux améliorer..."></textarea>
+            </div>
+
+            <p style="text-align:center; color: var(--gray); font-size: 0.9rem; margin-bottom: 15px;">
+                🔒 Aucune information bancaire n'est demandée sur ce site. 
+                Le paiement se fait après contact par virement ou autre moyen convenu.
+            </p>
+
+            <button type="submit" class="btn btn-primary btn-large">Envoyer ma demande</button>
+        </form>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="footer">
