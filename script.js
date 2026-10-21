@@ -126,3 +126,47 @@ window.addEventListener('scroll', () => {
 // grâce à action="https://formspree.io/f/TON_ID" method="POST"
 // dans index.html
 // ==========================================
+// BOUTON RETOUR EN HAUT
+// ==========================================
+const backToTop = document.getElementById('backToTop');
+
+if (backToTop) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+// ==========================================
+// ANIMATION DES NOUVELLES CARTES
+// ==========================================
+const newFadeElements = document.querySelectorAll('.avantage-card, .processus-card, .faq-item');
+
+const newFadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }, index * 80);
+            newFadeObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+
+newFadeElements.forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'all 0.6s ease';
+    newFadeObserver.
+// ==========================================
